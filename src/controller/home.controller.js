@@ -1,4 +1,16 @@
-const add = async(req,res)=>{
+// const add = async(req,res)=>{
+//     try{
+//         return res.json({
+//             status:200,
+//             message:"add function is calling"
+//         })
+//     }
+//     catch(error){
+//         console.log(error)
+//     }
+// }
+class testController {
+    async addData(req,res){
     try{
         return res.json({
             status:200,
@@ -8,7 +20,9 @@ const add = async(req,res)=>{
     catch(error){
         console.log(error)
     }
+    }
 }
+const controller = new testController();
 module.exports = {
-    add
+    controller
 }
