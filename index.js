@@ -3,10 +3,6 @@ import routes from './src/routes'
 const app = express();
 const port = 3000;
 
-app.get('/test', (req, res) => {
-  res.send('Hello, Express with import!');
-});
-
 app.use(json());
 
 app.use('/api/v1', routes); 
